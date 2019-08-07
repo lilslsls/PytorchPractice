@@ -87,3 +87,4 @@ for epoch in range(EPOCH):
             print(test_y.size())
             accuracy = float((pred_y == test_y.data.cpu().numpy()).astype(int).sum())/float(test_y.size(0))
             print('Epoch:',epoch,'|train loss:%.4f'%loss,'|test accuracy:%.2f'%accuracy)
+            
